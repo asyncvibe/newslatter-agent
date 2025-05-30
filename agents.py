@@ -7,7 +7,7 @@ from tools import google_search_tool
 
 
 # setting llm for agents
-model = "llama-3.3-70b-versatile"
+model = "groq/qwen-qwq-32b"
 api_key =os.getenv("GROQ_API_KEY")
 llm = ChatGroq(model=model, verbose=True, groq_api_key =  api_key)
 
